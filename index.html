@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrutanjan</title>
+  <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./Icomoon icons/style.css">
+</head>
+
+<body>
+  <header class="container-fluid p-0">
+    <section class="header-container">
+      <nav class="navbar navbar-expand-lg navbar-style navbar-dark w-100 fixed-top">
+        <a class="navbar-brand logo-wrapper" href="#">
+          <div class="inner-logo-wrapper">
+            <img class="logo-bg-style" src="./Resources/Logo-bg.png" alt="Logo">
+            <img class="logo-style" src="./Resources/Logo.png" alt="Logo">
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto navbar-ul-list w-100">
+            <li class="nav-item ">
+              <a class="nav-link each-nav-link " href="#0">About Us</a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link each-nav-link  mr-auto" href="./Cart/index.html">Our Products</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link each-nav-link" data-toggle="modal" data-target="#signInModal" href="#">Sign In</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link each-nav-link dropdown-toggle " href="#0" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-expanded="false">
+                ENG
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link each-nav-link search-icon " href="#0">Search <i class="bi bi-search"></i></a>
+              
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link each-nav-link dropdown-toggle " href="#0" id="cartDropdown" role="button"
+                data-toggle="dropdown" aria-expanded="false">
+                Cart <i class="bi bi-cart"></i>
+              </a>
+              <div class="dropdown-menu cart-dropdown ">
+                <div class="d-flex justify-content-start align-items-start">
+                  <img src="./Resources/navbar-cart-yellow.png" alt="balm">
+                  <div>
+                    <p class="m-0">Aromatic Action Pain Balm Extra Power</p>
+                    <p class="m-0">Price: 76</p>
+                    <p class="m-0">Quantity: 2 x 8ml</p>
+                  </div>
+                  <i class="bi bi-trash3 align-self-end m-2 mb-4"></i>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                  <img class="p-2" src="./Resources/navbar-cart-green.png" alt="balm">
+                  <div>
+                    <p class="m-0">Aromatic Action Pain Balm Extra Power</p>
+                    <p class="m-0">Price: 76</p>
+                    <p class="m-0">Quantity: 2 x 8ml</p>
+                  </div>
+                  <i class="bi bi-trash3 align-self-end m-2 mb-4"></i>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                  <img src="./Resources/navbar-cart-yellow.png" alt="balm">
+                  <div>
+                    <p class="m-0">Aromatic Action Pain Balm Extra Power</p>
+                    <p class="m-0">Price: 76</p>
+                    <p class="m-0">Quantity: 2 x 8ml</p>
+                  </div>
+                  <i class="bi bi-trash3 align-self-end m-2 mb-4"></i>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                  <img class="p-2" src="./Resources/navbar-cart-green.png" alt="balm">
+                  <div>
+                    <p class="m-0">Aromatic Action Pain Balm Extra Power</p>
+                    <p class="m-0">Price: 76</p>
+                    <p class="m-0">Quantity: 2 x 8ml</p>
+                  </div>
+                  <i class="bi bi-trash3 align-self-end m-2 mb-4"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <p class="align-self-end m-2">Cart Total: 552</p>
+                  <div class="w-100 d-flex">
+                    <a class="w-50 btn view-cart-btn m-1" href="#0">View Cart</a>
+                    <a class="w-50 btn check-out-btn m-1" href="#0">Check Out </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+           <!--  <li class="nav-item">
+              <a class="nav-link each-nav-link " href="#">Cart <i class="bi bi-cart"></i></a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link each-nav-link like-icon " href="#0">Whishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link each-nav-link shop-now-btn " href="#0">SHOP NOW</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img class="header-image" src="./Resources/background.png" alt="">
+      <h1 class="header-text-pure-healthy">PURE HEALTHY <br> ESSENCE</h1>
+
+
+      <!-- Popup one -->
+      <div class="modal " id="signInModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered ">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-center w-100">Are you Individual, Business or Guest User?</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body d-flex justify-content-around flex-wrap">
+             <div class="d-flex flex-column jutify-content-between align-items-center modal1-inner-cont">
+               <img src="./Resources/modal-user.png" alt="user">
+               <a class="btn btn-outline-secondary badge-pill m-2 pl-3 pr-5" data-toggle="modal" data-target="#signInModal2" href="#0">Individual</a>
+               <p class="text-secondary">Lorem ipsum dolor sit met</p>
+               <!-- <hr class="modal-hr-line border border-3"> -->
+             </div>
+             <div class="d-flex flex-column jutify-content-center align-items-center modal1-inner-cont">
+              <img class="modal-image" src="./Resources//modal-suitcase.png" alt="user">
+              <a class="btn btn-outline-secondary badge-pill m-2 pl-3 pr-5" data-toggle="modal" data-target="#signInModal2" href="#0">Business</a>
+              <p class="text-secondary">Lorem ipsum dolor sit met</p>
+            </div>
+            <div class="d-flex flex-column jutify-content-center align-items-center">
+              <img src="./Resources/modal-user.png" alt="user">
+              <a class="btn btn-outline-secondary badge-pill m-2 pl-3 pr-5" href="./index.html">Guest</a>
+              <p class="text-secondary">Lorem ipsum dolor sit met</p>
+            </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup two -->
+      <div class="modal" id="signInModal2">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Customer Login</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+              <form action="#0" class="d-flex flex-column justify-content-center align-items-center w-75">
+                <input class="m-2 w-100 modal-input-field" type="email" placeholder="Enter email id *">
+                <input class="m-2 w-100 modal-input-field" type="password" placeholder="Password *">
+                <div class="d-flex justify-content-between w-100">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <input class="mr-1" type="checkbox" id="remember">
+                    <label class="text-secondary" for="remember">Remember me</label>
+                  </div>
+                  <p class="text-secondary">Forgot pasword?</p>
+                </div>
+                <a href="./index.html" class="modal-login-btn align-self-start">Login</a>
+              </form>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer modal-2-footer d-flex flex-row justify-content-center align-items-center">
+              <p class="dont-have-acc-text">Don't have account?</p>
+              <a href="#0" class="btn btn-outline-secondary p-1">Signup?</a>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </header>
+  <main>
+    <section class=" over-125-years-cont d-flex flex-column flex-md-row ">
+      <div class="w-100 w-md-50 d-flex justify-content-center align-items-center ">
+        <img class="over-125-years-img-style" src="./Resources/125years.png" alt="125 Years">
+        <p class="over-125-years-text">Of touching, Caring & Healing</p>
+      </div>
+      <div class="w-100 w-md-50 percentage-cont d-flex justify-content-center align-items-center ">
+        <div class="inner-percentage-cont ">
+          <img class="hundered-image-style" src="./Resources/hundered.png" alt="hundered%" />
+          <h3 class="ayurvedic-text m-0">Ayurvedic</h3>
+          <p class="m-0 Ingredients-text">Active Ingredients</p>
+          <button class="no-diclofenac-btn">NO DICLOFENAC</button>
+        </div>
+        <p class="percentage-text">Amrutanjan is against using chemicals like Diclofenac which are harmful.</p>
+      </div>
+    </section>
+
+    <section class="shop-by-categories">
+      <h1 class="shop-by-text">Shop By Categories</h1>
+      <p class="all-products-text">All products are committed to your well-being</p>
+      <ul class="categories-cont d-flex flex-row justify-content-center align-items-center flex-wrap">
+        <li class="categories-card d-flex flex-column justify-content-center align-items-center border-0 ">
+          <a class="categories-card-anchor" href="#0">
+            <img class="categories-card-image" src="./Resources/Categories-Amrutanjan.png" alt="">
+            <label class="categories-card-label pain-managemenet-label" for="#0">Pain Management</label>
+          </a>
+          <a href="#0" class="btn btn-outline-dark badge-pill know-more-btn">Know more</a>
+        </li>
+        <li class="categories-card d-flex flex-column justify-content-center align-items-center border-0 ">
+          <a class="categories-card-anchor" href="#0">
+            <img class="categories-card-image" src="./Resources/Categories-relief.png" alt="">
+            <label class="categories-card-label congestion-management-label" for="#0">Congestion Management</label>
+          </a>
+          <a href="#0" class="btn btn-outline-dark badge-pill know-more-btn">Know more</a>
+        </li>
+        <li class="categories-card d-flex flex-column justify-content-center align-items-center border-0 ">
+          <a class="categories-card-anchor" href="#0">
+            <img class="categories-card-image" src="./Resources/Categories-comfy.png" alt="">
+            <label class="categories-card-label womens-hygiene-label" for="#0">Womens's Hygiene</label>
+          </a>
+          <a href="#0" class="btn btn-outline-dark badge-pill know-more-btn">Know more</a>
+        </li>
+        <li class="categories-card d-flex flex-column justify-content-center align-items-center border-0 ">
+          <a class="categories-card-anchor" href="#0">
+            <img class="categories-card-image" src="./Resources/Categories-electro.png" alt="">
+            <label class="categories-card-label beverages-label" for="#0">Beverages</label>
+          </a>
+          <a href="#0" class="btn btn-outline-dark badge-pill know-more-btn">Know more</a>
+        </li>
+        <li class="categories-card d-flex flex-column justify-content-center align-items-center border-0 ">
+          <a class="categories-card-anchor" href="#0">
+            <img class="categories-card-image" src="./Resources/Categories-hand-sanitizer.png" alt="">
+            <label class="categories-card-label personal-care-label" for="#0">Personal care</label>
+          </a>
+          <a href="#0" class="btn btn-outline-dark badge-pill know-more-btn">Know more</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="trending-now w-100">
+      <div class="inner-trending-now d-flex flex-row justify-content-center  align-items-start">
+        <div class="tulasi-container d-none d-md-block">
+          <img class="tulasi-image" src="./Resources/Tulasi.png" alt="Tulasi">
+        </div>
+        <div class="trending-now-card-outer-cont d-flex flex-column justify-content-center align-items-center">
+          <div class=" trending-header-para-text d-flex flex-column justify-content-start align-items-start align-items-sm-start">
+              <h1 class="shop-by-text">Trending Now</h1>
+              <p class="find-out-text">Find out what suits your needs!</p>
+          </div>
+          <ul class="slider trending-now-card-cont d-flex justify-content-center align-items-center p-0 flex-wrap">
+            <li class="trending-now-card d-flex flex-column justify-content-center align-items-center border-0 ">
+              <a class="trending-now-card-anchor" href="#0">
+                <img class="trending-now-card-image" src="./Resources/Trending-amrutanjan.png" alt="">
+                <div
+                  class="trending-now-label-btn-cont text-white d-flex flex-column justify-content-start align-items-start">
+                  <label class="trending-now-card-label " for="#0">Double power Pain relief</label>
+                  <button class="btn badge-pill trending-now-btn">SHOP KNOW</button>
+                </div>
+              </a>
+            </li>
+            <li class="trending-now-card d-flex flex-column justify-content-center align-items-center border-0 ">
+              <a class="trending-now-card-anchor" href="#0">
+                <img class="trending-now-card-image" src="./Resources/Trending-headache.png" alt="">
+                <div
+                  class="trending-now-label-btn-cont text-white d-flex flex-column justify-content-start align-items-start">
+                  <label class="trending-now-card-label " for="#0">Headache Relief on the go</label>
+                  <button class="btn badge-pill trending-now-btn">SHOP KNOW</button>
+                </div>
+              </a>
+            </li>
+            <li class="trending-now-card d-flex flex-column justify-content-center align-items-center border-0 ">
+              <a class="trending-now-card-anchor" href="#0">
+                <img class="trending-now-card-image" src="./Resources/Trending-comfy.png" alt="">
+                <div
+                  class="trending-now-label-btn-cont text-white d-flex flex-column justify-content-start align-items-start">
+                  <label class="trending-now-card-label " for="#0">Power To be you</label>
+                  <button class="btn badge-pill trending-now-btn">SHOP KNOW</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="trending-now-card d-flex flex-column justify-content-center align-items-center border-0 ">
+              <a class="trending-now-card-anchor" href="#0">
+                <img class="trending-now-card-image" src="./Resources/Trending-amrutanjan.png" alt="">
+                <div
+                  class="trending-now-label-btn-cont text-white d-flex flex-column justify-content-start align-items-start">
+                  <label class="trending-now-card-label " for="#0">Double power Pain relief</label>
+                  <button class="btn badge-pill trending-now-btn">SHOP KNOW</button>
+                </div>
+              </a>
+            </li>
+            <li class="trending-now-card d-flex flex-column justify-content-center align-items-center border-0 ">
+              <a class="trending-now-card-anchor" href="#0">
+                <img class="trending-now-card-image" src="./Resources/Trending-headache.png" alt="">
+                <div
+                  class="trending-now-label-btn-cont text-white d-flex flex-column justify-content-start align-items-start">
+                  <label class="trending-now-card-label " for="#0">Headache Relief on the go</label>
+                  <button class="btn badge-pill trending-now-btn">SHOP KNOW</button>
+                </div>
+              </a>
+            </li>
+            <li class="trending-now-card d-flex flex-column justify-content-center align-items-center border-0 ">
+              <a class="trending-now-card-anchor" href="#0">
+                <img class="trending-now-card-image" src="./Resources/Trending-comfy.png" alt="">
+                <div
+                  class="trending-now-label-btn-cont text-white d-flex flex-column justify-content-start align-items-start">
+                  <label class="trending-now-card-label " for="#0">Power To be you</label>
+                  <button class="btn badge-pill trending-now-btn">SHOP KNOW</button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="whats-new d-flex flex-column justify-content-center align-items-center">
+      <h1 class="shop-by-text">Whats's new</h1>
+      <p class="all-products-text">All products are committed to your well-being</p>
+      <ul class="whats-new-card-container d-flex justify-content-center align-items-center flex-wrap">
+        <li class="whats-new-card">
+          <a href="#0" class="whats-new-card-anchor">
+            <img class="whats-new-card-image" src="./Resources/whats-new-pain-relief.png" alt="">
+            <div class="whats-new-card-inner-cont d-flex flex-column justify-content-between align-items-center">
+              <div class="d-flex flex-column justify-content-between align-items-center">
+                <h3 class="whats-new-card-header-text">PAIN PATCH</h3>
+                <p class="whats-new-card-para-text badge-pill">Pain relief up to 8 hours</p>
+              </div>
+              <a href="#0" class="btn badge-pill whats-new-card-btn">SHOP NOW</a>
+            </div>
+          </a>
+        </li>
+        <li class="whats-new-card">
+          <a href="#0" class="whats-new-card-anchor">
+            <img class="whats-new-card-image" src="./Resources/whats-new-pain-relief.png" alt="">
+            <div class="whats-new-card-inner-cont d-flex flex-column justify-content-between align-items-center">
+              <div class="d-flex flex-column justify-content-between align-items-center">
+                <h3 class="whats-new-card-header-text">BACK PAIN ROLL-ON</h3>
+                <p class="whats-new-card-para-text badge-pill">Pain relief up to 8 hours</p>
+              </div>
+              <a href="#0" class="btn badge-pill whats-new-card-btn">SHOP NOW</a>
+            </div>
+          </a>
+        </li>
+        <li class="whats-new-card">
+          <a href="#0" class="whats-new-card-anchor">
+            <img class="whats-new-card-image" src="./Resources/whats-new-pain-relief.png" alt="">
+            <div class="whats-new-card-inner-cont d-flex flex-column justify-content-between align-items-center">
+              <div class="d-flex flex-column justify-content-between align-items-center">
+                <h3 class="whats-new-card-header-text">Electro + ORS</h3>
+                <p class="whats-new-card-para-text badge-pill">Pain relief up to 8 hours</p>
+              </div>
+              <a href="#0" class="btn badge-pill whats-new-card-btn">SHOP NOW</a>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="identify-your-pain d-flex flex-column justify-content-center align-items-center">
+      <h1 class="shop-by-text">Identify your pain</h1>
+      <p class="all-products-text">Specialised Center for Pain Management</p>
+      <ul class="identify-cards-container d-flex justify-content-center align-items-center flex-wrap">
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-headache.png" alt="headache">
+            <label class="identify-card-label" for="#0">Headache</label>
+          </a>
+        </li>
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-neck-pain.png" alt="headache">
+            <label class="identify-card-label" for="#0">Neck Pain</label>
+          </a>
+        </li>
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-shoulder-pain.png" alt="headache">
+            <label class="identify-card-label" for="#0">Shoulder Pain</label>
+          </a>
+        </li>
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-back-pain.png" alt="headache">
+            <label class="identify-card-label" for="#0">Back Pain</label>
+          </a>
+        </li>
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-knee-pain.png" alt="headache">
+            <label class="identify-card-label" for="#0">Knee Pain</label>
+          </a>
+        </li>
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-muscle-pain.png" alt="headache">
+            <label class="identify-card-label" for="#0">Muscle Pain</label>
+          </a>
+        </li>
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-ankle-pain.png" alt="headache">
+            <label class="identify-card-label" for="#0">Ankle and Foot pain</label>
+          </a>
+        </li>
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-elbow-pain.png" alt="headache">
+            <label class="identify-card-label" for="#0">Elbow Pain</label>
+          </a>
+        </li>
+        <li class="identify-card">
+          <a class="identify-card-anchor" href="#0">
+            <img class="identify-card-image" src="./Resources/identify-wrist-pain.png" alt="headache">
+            <label class="identify-card-label" for="#0">Wrist Pain</label>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <div class="container-fluid footer">
+        <div class="row d-flex justify-content-start align-items-start">
+          <div
+            class="each-footer-cont col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+            <h5 class="footer-header">Quick Links</h5>
+            <a class="footer-anchor" href="#0">Bulk Buys</a>
+            <a class="footer-anchor" href="#0">Investor Relationss</a>
+            <a class="footer-anchor" href="#0">Careers</a>
+            <a class="footer-anchor" href="#0">Contact Us</a>
+          </div>
+          <div
+            class="each-footer-cont col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+            <h5 class="footer-header">Customer Care</h5>
+            <a class="footer-anchor" href="#0">Order History</a>
+            <a class="footer-anchor" href="#0">Shipping</a>
+            <a class="footer-anchor" href="#0">Returns</a>
+            <a class="footer-anchor" href="#0">Terms of Use</a>
+            <a class="footer-anchor" href="#0">Returns</a>
+            <a class="footer-anchor" href="#0">Privacy Policy</a>
+            <a class="footer-anchor" href="#0">Cancellation Policy</a>
+          </div>
+          <div
+            class="each-footer-cont col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+            <h5 class="footer-header">Quick Links</h5>
+            <div class="footer-anchor address-icon d-flex justify-content-start align-items-start">
+              <p>103, (Old No. 42-45), Luz Church Road. Mylapore, Chennai- 600 004.</p>
+            </div>
+            <a class="footer-anchor phone-icon" href="#0">+91 44 2499 4465 (5 Lines)</a>
+            <a class="footer-anchor mobile-icon" href="#0">Toll Free | 1-800-425-4545</a>
+            <a class="footer-anchor fax-icon" href="#0">Fax | +91 44 2499 4585</a>
+            <a class="footer-anchor mail-icon" href="#0">customercare@amrutanjan.com</a>
+            <a class="footer-anchor user-icon" href="#0">investors@amrutanjan.com</a>
+            <a class="footer-anchor pt-3" href="#0">Web Safelty Links</a>
+            <a class="footer-anchor pt-3" href="#0">Sitemap / Links</a>
+          </div>
+          <div
+            class=" each-footer-cont col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+            <h5 class="footer-header">Sign Up to Newsletter</h5>
+            <p class="footer-subscribe-text">Subscribe to our newsletter and get info on best deals</p>
+            <form action="#0" class="d-flex flex-column justify-content-end align-items-end mt-3 w-100">
+              <input class="form-input-field p-2" type="email" placeholder="Enter Email ID">
+              <button class="align-self-end subscribe-btn" type="submit">Subscribe</button>
+            </form>
+            <div class="footer-icons d-flex justify-content-end align-items-end mt-5">
+              <a href="#0" class="footer-icon facebook-icon"></a>
+              <a href="#0" class="footer-icon youtube-icon"></a>
+              <a href="#0" class="footer-icon twitter-icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copy-right-text text-center pt-4">&copy; Copyright 2020 - Amrutanjan Health Care Ltd. All rights reserved. Please read our privacy policy.</p>
+    </section>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,805 @@
+@font-face {
+    font-family: Intro-demo-black-caps;
+    src: url(./fonts/IntroDemo-BlackCaps.otf);
+}
+@font-face {
+    font-family: Avenir-next-regular;
+    src: url(./fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+    font-family: Poppins-bold;
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.header-container {
+    position: relative;
+    color: #ffffff;
+    width: 100%;
+}
+.header-image {
+    width: 100%;
+}
+.each-nav-link {
+    color: #ffffff !important;
+    min-width: 110px;
+    font-family: Intro-demo-black-caps;
+}
+
+.like-icon::after {
+    content: "\e90b";
+    color: #ffffff;
+    font-family: icomoon;
+    padding-left: 6px;
+}
+.navbar-ul-list {
+    width: 90%;
+}
+.header-text-pure-healthy {
+    font-family: Intro-demo-black-caps;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    width: 100%;
+}
+.navbar-style {
+    background-color: rgb(53, 78, 37, 0.5);
+    padding: 0;
+}
+.logo-style {
+    width: 80px;
+}
+.cart-dropdown{
+    height: 300px;
+    width: 300px;
+    overflow: auto;
+}
+.view-cart-btn {
+    background-color: #E2B00E;
+    color: #ffffff;
+}
+.check-out-btn {
+    background-color: #589831;
+    color: #ffffff;
+}
+.view-cart-btn:hover {
+    color: #ffffff;
+}
+.check-out-btn:hover {
+    color: #ffffff;
+}
+/* .logo-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 87px;
+    padding-left: 60px;
+} */
+.logo-bg-style {
+    display: none;
+}
+.shop-now-btn {
+    background-color: #097115;
+    border-radius: 4px;
+    margin-right: 5px;
+    text-align:  center;
+}
+.over-125-years-cont {
+    min-height: 220px;
+}
+.over-125-years-img-style {
+    width: 100px;
+    padding: 12px;
+}
+.over-125-years-text {
+    font-family: Avenir-next-regular;
+    font-size: 16px;
+    width: 130px;
+}
+.percentage-cont {
+    font-family: Avenir-next-regular;
+    background-image: linear-gradient(#ffffff, #85D1D1);
+    padding: 6px;
+}
+.inner-percentage-cont {
+    flex-shrink: 0;
+    padding: 10px;
+}
+.percentage-text {
+    font-size: 16px;
+}
+.no-diclofenac-btn {
+    background-color: #953F19;
+    border-radius: 9px;
+    color: #ffffff;
+    border: 0px;
+    outline: 0px;
+}
+.percentage-text {
+    max-width: 280px;
+}
+
+/* -----------------------------------------------------Modals-------------------------------------------- */
+.modal-title {
+    color: #000000;
+}
+.modal-image {
+    width: 100px;
+    margin-bottom: 15px;
+}
+.modal-input-field {
+    background-color: #F3F7F0;
+    border: 0;
+    padding: 5px;
+/*     border-left: 2px solid #589831; */
+}
+.modal-login-btn {
+    background-color: #589831;
+    padding: 3px 30px;
+    color: #ffffff;
+    border-radius: 9px;
+}
+.modal-login-btn:hover {
+    text-align: none;
+    color: #ffffff;
+}
+.modal-2-footer {
+    background-color: #EAEAEA;
+}
+.dont-have-acc-text {
+    color: #000000;
+}
+/*------------------------------------- shop by categories section ------------------------------------------*/
+
+.shop-by-categories {
+    
+    background-image: url(./Resources/Categories-bg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.shop-by-text {
+    font-family: Intro-demo-black-caps;
+    font-size:25px;
+}
+.all-products-text {
+    font-size: 14px;
+    font-family: Avenir-next-regular;
+}
+.know-more-btn {
+    font-family: Intro-demo-black-caps;
+    border: 1px solid #414141;
+    color: #414141;
+    text-decoration: none;
+    padding: 0px 30px 0px 20px;
+    margin: 6px;
+}
+.know-more-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.categories-cont {
+    list-style-type: none;
+    padding:0px;
+}
+.categories-card {
+    margin: 10px 20px;
+}
+.categories-card-anchor {
+    position: relative;
+    text-decoration: none;
+}
+.categories-card-image {
+    width: 200px;
+    min-width: 200px;
+    max-width: 319px;
+    border: 0;
+}
+.categories-card-label {
+    font-family: Intro-demo-black-caps;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 90px;
+}
+.pain-managemenet-label {
+    color: #006033;
+}
+.congestion-management-label {
+    color: #ffffff;
+}
+.womens-hygiene-label {
+    color: #074A81;
+}
+.beverages-label {
+    color: #ffffff;
+}
+.personal-care-label {
+    color: #ffffff;
+}
+/*------------------------------------- Trending Now secxtion ------------------------------------------*/
+
+.trending-now {
+    background-image: url(./Resources/Trending-bg.png);
+    background-size: 20%, 20%; 
+    background-color: #222222;
+}
+.inner-trending-now {
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+}
+.tulasi-container {
+    position: relative;
+    width: 20%;
+    height: auto;
+}
+.trending-now-card-outer-cont {
+    width: 100%;
+    height: 100%;
+}
+.tulasi-image {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 200px;
+}
+.trending-now-card-anchor {
+    position: relative;
+}
+.trending-now-label-btn-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.trending-now-card-label {
+    font-family: Intro-demo-black-caps;
+}
+.trending-now-card{
+    width: 60%;
+    margin: 10px 15px;
+}
+.trending-now-card-image {
+    width: 100%;
+    max-width: 438px;
+}
+.trending-now-label-btn-cont{
+    padding: 20px 30px;
+}
+.trending-now-btn {
+    font-family: Intro-demo-black-caps;
+    background-color: #ffffff;
+    font-size: 12px;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+.find-out-text {
+    font-family: Avenir-next-regular;
+    font-size: 14px;
+}
+.trending-header-para-text {
+    position: relative;
+    width: 80%;
+}
+.slider {
+    width: 80% ;
+}
+/*------------------------------------- Whats new section ------------------------------------------*/
+.whats-new {
+    position: relative;
+}
+.whats-new-card-container {
+    list-style-type: none;
+    padding: 0;
+}
+.whats-new-card {
+    position: relative;
+    margin: 10px 20px;
+}
+.whats-new-card-anchor {
+    text-decoration: none;
+    height: auto;
+    width: auto;
+}
+.whats-new-card-image {
+    width: 260px;
+    max-width: 560px;
+}
+.whats-new-card-inner-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.whats-new-card-header-text {
+    font-family: Intro-demo-black-caps;
+    color: #244B0C;
+    font-size: 22px;
+    padding-top: 10px;
+}
+.whats-new-card-para-text {
+    font-family: Avenir-next-regular;
+    background-color: #393939;
+    color: #ffffff;
+    font-weight: bold;
+}
+.whats-new-card-btn {
+    font-family: Intro-demo-black-caps;
+    background-color: #ffffff;
+    padding: 5px 12px;
+    color: #000000;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/*-------------------------------------Identify section ------------------------------------------*/
+.identify-your-pain {
+    position: relative;
+}
+.identify-cards-container {
+    list-style-type: none;
+    padding: 0;
+    
+}
+.identify-card-anchor {
+    text-decoration: none;
+}
+.identify-card {
+    position: relative;
+    margin: 13px;
+}
+.identify-card-image {
+    width: 260px;
+}
+.identify-card-label {
+    font-family: Intro-demo-black-caps;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    z-index: 1;
+}
+.identify-card-anchor::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgb(31,37,61,0),rgb(17, 18, 24,0.5));
+    height: 30%;
+    width: 100%;
+}
+/* ---------------------------------------------footer section ------------------------------------------------- */
+/* .footer-header {
+    font-family: Intro-demo-black-caps;
+} */
+.footer-anchor {
+    font-family: Avenir-next-regular;
+    text-decoration: none;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.footer-anchor:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.address-icon {
+    width: 200px;
+}
+.address-icon::before {
+    content: "\e900";
+    color: #009c50;
+    font-family: icomoon;
+    padding-right: 6px;
+}
+.phone-icon::before {
+    content: "\e901";
+    color: #009c50;
+    font-family: icomoon;
+    padding-right: 6px;
+}
+.mobile-icon::before {
+    content: "\e902";
+    color: #009c50;
+    font-family: icomoon;
+    padding-right: 6px;
+}
+.fax-icon::before {
+    content: "\e903";
+    color: #009c50;
+    font-family: icomoon;
+    padding-right: 6px;
+}
+.mail-icon::before {
+    content: "\e904";
+    color: #009c50;
+    font-family: icomoon;
+    padding-right: 6px;
+}
+.user-icon::before {
+    content: "\e905";
+    color: #009c50;
+    font-family: icomoon;
+    padding-right: 6px;
+}
+.footer-subscribe-text {
+    width: 240px;
+}
+.form-input-field {
+    width: 100%;
+    margin: 20px 0px;
+}
+.subscribe-btn {
+    font-family: Avenir-next-regular;
+    background-image: linear-gradient(to right, #589831, #D5AC23);
+    padding: 6px 30px;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.footer {
+    background-color: #EAEFF2;
+    padding: 40px;
+}
+.facebook-icon::after{
+    content: "\e906";
+    color: #fff;
+    font-family: icomoon;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.youtube-icon::after {
+    content: "\e907";
+    color: #fff;
+    font-family: icomoon;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.twitter-icon::after {
+    content: "\e908";
+    color: #fff;
+    font-family: icomoon;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.footer-icons {
+    width: 100%;
+    height: 100px;
+}
+.footer-icon:hover {
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 600px) {
+    .trending-now-card{
+        width: 40%;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .header-text-pure-healthy {
+        font-size: 40px;
+    }
+    .all-products-text:before {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 1px;
+        background-color: #707070;
+        left: 0;
+        top: 50px;
+        position: absolute;
+    }
+    .all-products-text:after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 1px;
+        background-color: #707070;
+        right: 0;
+        top: 50px;
+        position: absolute;
+    }
+   /*  .find-out-text::after {
+        content: "";
+        display: block;
+        width: 60%;
+        height: 1px;
+        background-color: #707070;
+        right: 0;
+        top: 52px;
+        position: absolute;
+    } */
+    .whats-new-all-products-text:before {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 1px;
+        background: #707070;
+        right: 0;
+        top: 50px;
+        position: absolute;
+    }
+    .whats-new-all-products-text:after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 1px;
+        background: #707070;
+        right: 0;
+        top: 50px;
+        position: absolute;
+    }
+    .trending-now-card{
+        width: 28%;
+    } 
+    .trending-now-card-outer-cont {
+        width: 80%;
+        height: 100%;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .each-nav-link {
+        min-width: 110px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .modal1-inner-cont {
+        padding-right:20px;
+        border-right: 1px solid #000000;
+    }
+    .navbar-style {
+        padding: 20px 0px;
+    }
+    .logo-style {
+        width: 120px;
+        z-index: 1;
+    }
+    .logo-wrapper {
+        position: relative;
+        width: 20%;
+     }
+     .inner-logo-wrapper {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+     }
+     .logo-bg-style {
+         display: block;
+         position: absolute;
+         top: 56px;
+         width: 230px;
+     }
+     
+    .over-125-years-img-style {
+        width: 130px;
+    }
+    .over-125-years-text {
+        font-size: 20px;
+        width: 170px;
+    }
+    .percentage-text {
+        font-size: 20px;
+        max-width: 350px;
+    }
+    .shop-by-text {
+        font-size:35px;
+    }
+    .all-products-text {
+        font-size: 20px;
+    }
+    .all-products-text:before {
+        top: 65px;
+    }
+    .all-products-text:after {
+        top: 65px;
+    }
+    .identify-card {
+        width: 28%;
+    }
+    .identify-card-image {
+        width: 100%;
+        max-width: 524px;
+    }
+    
+}
+@media screen and (min-width: 1148px) {
+    .logo-bg-style {
+        top: 45px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .logo-bg-style {
+        top: 47px;
+    }
+    .each-nav-link {
+        min-width: 120px;
+        font-size: 18px;
+    }
+    .header-text-pure-healthy {
+        font-size: 60px;
+    }
+    .tulasi-image {
+        width: 250px;
+        left: -60px;
+    }
+    .trending-now-card-label {
+        font-size: 25px;
+    }
+    .trending-now-btn {
+        font-size: 15px;
+        padding: 6px 15px;
+    }
+    .whats-new-card {
+        width: 25%;
+        margin: 10px 30px;
+    }
+   .whats-new-card-image {
+       width: 100%;
+   }
+   .whats-new-card-header-text {
+    font-size: 28px;
+    }
+    .whats-new-card-para-text {
+        font-size: 18px;
+    }
+    .whats-new-card-btn {
+       font-size: 15px;
+       padding: 5px 22px;
+    }
+    .footer-anchor {
+        font-size: 20px;
+    }
+    .footer {
+        padding: 40px 50px;
+    }
+    .footer-header {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .inner-logo-wrapper {
+        top: -100%;
+    }
+    .logo-style {
+        width: 140px;
+        top: 30%;
+    }
+    .logo-bg-style {
+        width: auto;
+        top: 57px;
+    }
+    .header-text-pure-healthy {
+        font-size: 88px;
+    }
+    .categories-card {
+        width: calc(100%/6);
+    }
+    .categories-card-image {
+        width: 90%;
+    }
+    .trending-now-card{
+        width: 30%;
+    } 
+    .tulasi-image {
+        width: 350px;
+        left: -80px;
+    }
+    .trending-now-card-label {
+        font-size: 30px;
+        padding: 6px 20px;
+    }
+    .trending-now-btn {
+        font-size: 22px;
+    }
+    .whats-new-card-header-text {
+        font-size: 32px;
+    }
+    .whats-new-card-para-text {
+        font-size: 20px;
+    }
+    .whats-new-card-btn {
+        font-size: 18px;
+     }
+    .footer {
+        padding: 60px 80px;
+    }
+    .footer-anchor {
+        font-size: 20px;
+    }
+    .footer-header {
+        font-size: 29px;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .over-125-years-img-style {
+        width: 155px;
+    }
+    .over-125-years-text {
+        font-size: 30px;
+        width: 240px;
+    }
+    .ayurvedic-text {
+        font-size: 29px;
+    }
+    .Ingredients-text {
+        font-size: 21px;
+    }
+    .shop-by-text {
+        font-size:50px;
+    }
+    .all-products-text {
+        font-size: 25px;
+    }
+    .all-products-text:before {
+        top: 90px;
+    }
+    .all-products-text:after {
+        top: 90px;
+    }
+    .categories-card-image {
+        width: 319px;
+    }
+    .know-more-btn {
+        padding: 0px 40px 0px 23px;
+        margin: 6px;
+    }
+    .trending-now-card-label {
+        font-size: 36px;
+    }
+    .whats-new-card {
+        width: 516px;
+    }
+    .whats-new-card-header-text {
+        font-size: 41px;
+    }
+    .whats-new-card-para-text {
+        font-size: 24px;
+    }
+    .whats-new-card-btn {
+        font-size: 22px;
+    }
+    .footer {
+        padding: 80px 100px;
+    }
+    .footer-anchor {
+        font-size: 25px;
+    }
+
+}
